@@ -1,8 +1,8 @@
 name : Hello Workflow
-on : [push]
+on: [push]
 jobs:
     say-hello:
       runs-on: ubuntu-latest
       steps:
         - name: Print a message
-          run: echo "Hello, World!" "
+          run: echo "Hello, World!" 
