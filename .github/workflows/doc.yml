@@ -16,6 +16,6 @@ jobs:
       - name: List Docker Images
         run: docker images
       - name: Log in to Docker Hub
-        run: echo "${{secrets.PASSWORD}}" \ docker login -u ${{secrets.USERNAME}} --password-stdin
+        run: echo "${{ secrets.PASSWORD }}" | docker login -u $ {{ secrets.USERNAME }} --password-stdin
       - name: Push Docker Image to Docker Hub
         run: docker push dharshan7135/devops 
